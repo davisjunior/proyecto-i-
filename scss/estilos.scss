@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #FBFCFC ;
+    font-family: 'Roboto Slab', serif;
+    .main-page{
+
+        .cabecera-fija{
+            background: rgb(247, 247, 247);
+            color: rgb(95, 95, 95);
+            padding: 5px 20px;
+            position: sticky;
+            width: 100%;
+            height: 50px;
+            top: 0;
+            z-index: 99;
+            a{
+                color: rgb(95, 95, 95);
+                text-decoration: none;
+                align-items: center;
+            }
+            .container{
+                display: flex;
+                justify-content: space-between;
+                height: 93%;
+
+                .imagen-logo-cabecera{
+                    width: 145px;
+                    height: 40px;
+
+                    img{
+                        width: 140px;
+                        height: 40px;
+                    }
+                }
+// bucador en cabecera de la paguna buscar
+                .buscador-en-cabecera{
+                    width: 525px;
+                    height: 39px;
+                    background: transparent;
+                    margin-top: 0px;
+                    margin-left: 55px;
+                    
+
+                    .buscador-1{
+                        width: 472px;
+                        height: 39.1px;
+                        border: 1px solid #dddddd;
+                        border-radius: 5px;
+                        padding-left: 15px;
+                    }
+
+                    .boton-buscador{
+
+                        width: 53px;
+                        height: 39.5px;
+                        margin-left: -15px;
+                        border: none;
+                        background: #321689;
+                        border-radius: 5px;
+
+                        i{
+                            color: white;
+                        }
+                    }
+                }
+
+                // fin bucador en cabecera de la paguna buscar
+
+
+                .navegacion{
+                    padding-top: 0.5%;
+
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        li{
+                            display: inline-block;
+                            margin-right: 5px;
+
+                            
+
+                            .iniciar{
+                                color:#3753d1;
+
+                                &:hover{
+                                    color: #0429cf;
+                                    transition: 1s ease;
+                                }
+                            }
+
+                            a{
+                                display: block;
+                                padding: 5px 16px;
+                                font-size: 12px;
+                                font-family: arial;
+                                
+
+                                &:hover{
+                                    color: rgb(15, 15, 15);
+                                    transition: 0.8s ease;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //&--home {
+            //    background: green;
+           //}
+            
+        }
+// este es el menu de la segunda pagina, cuando entras en buscar
+        .menu-2{
+            position: relative;
+            top: 20px;
+            width: 86.5%;
+            height: 55px;
+            background: #FBFCFC;
+            margin: auto;
+            display: flex;
+            margin-bottom: 40px;
+            justify-content: space-between;
+            padding-left: 160px;
+            padding-right: 160px;
+            padding-top: 16px;
+            box-shadow: 0px 5px 9px #cfcbcb;
+            border-radius: 5px;
+        
+
+            .relleno-menu{
+
+                a{
+                    text-decoration: none;
+                    color: #414141;
+                }
+            }
+        }
+
+        .fondo-buscador{
+            width: 100%;
+            background: rgb(0, 0, 0);
+            height: 450px;
+            overflow: hidden;
+            padding-bottom: 50px;
+
+            img{
+                width: 100%;
+                height: auto;
+
+            }
+        }
+
+        .sobre-imagen{
+            position: absolute;
+            top: 285px;
+            left: 205px;
+            
+            .buscador{
+                width: 750px;
+                height: 38px;
+                border: none;
+                color: gray;
+                font-size: 15px;
+                padding-left: 5px;
+            }
+
+                .boton-buscador{
+                    height: 38px;
+                    margin-left: -4px;
+                    padding: 0px 66px;
+                    background: rgb(55, 83, 209);
+                    color: white;
+                    border: none;
+                    
+                    &:hover{
+                        background:rgb(13, 34, 129);
+                        transition: 1s ease;
+                    }
+                }
+
+        }
+
+        .botones-sobre-buscador{
+            display: flex;
+            position: absolute;
+            top: 246px;
+            left: 204px;
+            background: hsla(0, 0%, 0%, 0.36);
+
+
+
+            div{
+                width: 187.3px;
+                height: 40px;
+                text-align: center;
+                border: 1px solid gray;
+                padding-top: 8px;
+                cursor: pointer;
+
+                &:hover{
+                    background:rgba(0, 0, 0, 0.52) ;
+                    transition: 0.5s ease;
+                }
+
+                a{
+                    color:white;
+                    text-decoration: none;
+                    padding: 8px 39px;
+                    font-size: 14px;
+                    
+                    
+                }
+            }
+        }
+
+        .titulo-sobre-imagen{
+            position: absolute;
+            top: 180px;
+            left: 476px;
+            color: white;
+        }
+
+        .inicio-galeria{
+
+            width: 90%;
+            height: 70px;
+            border-bottom: 1px solid rgb(190, 190, 190);
+            margin-left: 65px;
+            margin-top: 60px;
+            font-family: "poppins";
+            font-size: 14px;
+            color: rgb(44, 44, 44);
+            margin-bottom: 25px;
+
+            h1{
+                padding-top: 20px;
+            }
+        }
+
+
+        .contenedor-galeria{
+            position: relative;
+            top:20px;
+            width: 1168px;
+            height: 550px;
+            background: #FBFCFC;
+            margin: auto;
+            margin-bottom: 25px;
+
+            .galeria{
+                display: flex;
+
+                li{
+                    list-style: none;
+                    width: 374px;
+                    margin-right: 21px;
+                    position: relative;
+
+                    //iconos de segunda pagina ,busqueda
+                    .iconos-gps{
+                        width: 42px;
+                        height: 35px;
+                        background: #28282880;
+                        position: absolute;
+                        top: 5px;
+                        left: 328px;
+                        border-radius: 26px;
+                        padding-left: 4px;
+
+                        img{
+                            width: 27px;
+                            height: 28px;
+                            padding-left: 7px;
+                            padding-top: 7px;
+                        }
+                    }
+                    .iconos-street{
+                        width: 60px;
+                        height: 33px;
+                        background: #2626268a;
+                        position: absolute;
+                        top: 244px;
+                        padding-top: 3px;
+                        padding-left: 2px;
+                        border-radius: 4px;
+                        left: 311px;
+                        display: flex;
+                        padding-bottom: 4px;
+
+                        img{
+                            width: 26px;
+                            height: auto;
+                        }
+                        p{
+                            color: white;
+                            font-size: 14px;
+                            padding-left: 6px;
+                            padding-top: 6px;
+                            font-family: arial;
+                        }
+                    }
+                    //terminan iconos de segunda imagen
+
+                    .imagen-galeria{
+                        position: relative;
+                        width: 375px;
+                        height: 281px;
+                        margin-right: 21px;
+                        //border: 1px solid #b0b0b0;
+                        border-bottom: none;
+                        box-shadow: 0px 0px 6px grey;
+
+                        &:hover{
+                            box-shadow: 0px 0px 7px 2px rgb(99, 99, 99);
+                            transition: 0.8s ease;
+                        }
+
+                    }
+
+                    .bajo-imagen{
+                        width: 375px;
+                        height: 225px;
+                        background: #f7f7f7;
+                        display: block;
+                        padding-top: 14px;
+                        margin-top: -4px;
+                        text-decoration: none;
+                        color: white;
+
+                        box-shadow: 0px 0px 5px grey;
+                        position: relative;
+
+                        &::before{
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: 6px;
+                            background: #3753d1;
+                            position: absolute;
+                            bottom: 0;
+                        }
+                        &:hover::before{
+                                width:100%;
+                                transition: 0.6s ease;
+                        }
+
+                        &:hover{
+                            box-shadow: 0px 0px 7px 2px rgb(99, 99, 99);
+                            transition: 0.8s ease;
+                        }
+
+                        .span{
+                            margin-top: 10px;
+                            padding-bottom: 10px;
+                            line-height: 1px;
+                        }
+
+                        .precio{
+                            margin-right: 256px;
+                            margin-left: 11px;
+                            color: #5252ea;
+                            font-weight: 600;
+                        }
+
+                        .producto{
+                            margin-left: 10px;
+                            padding-right: 205px;
+                            color: #353535;
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+
+                        .propiedad-en{
+                            padding-left: 10px;
+                            padding-right: 226px;
+                            color: #666666;
+                            font-size: 11px;
+                            font-family: arial;
+                        }
+
+                        .ubicacion{
+                            margin-right: 58px;
+                            padding-left: 20px;
+                            font-size: 15px;
+                            color: #353535;
+                        }
+
+                        .icon-dormitorio{
+                            margin-left: 33px;
+                            margin-right: 67px;
+                        }
+
+                        .icon-medida{
+                            margin-right: 55px;
+                            margin-left: 17px;
+                        }
+
+                        .icon-cochera{
+                            margin-left: 33px;
+                            margin-right: 67px;
+
+                        }
+
+                        .icon-baño{
+
+                            margin-left: 42px;
+                        }
+
+                        .espacio{
+                            line-height: 3;
+                            height: 105px;
+                            font-size: 13px;
+                            padding-top: 10px;
+                            padding-left: 25px;
+                            color: #808080;
+                        }
+                        i{
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contenedor-destacadas{
+            width: 90%;
+            height: auto;
+            background:#FBFCFC;
+            position: relative;
+            top: 40px;
+            margin: auto;
+            padding-top: 4px;
+            margin-bottom: 100px;
+
+            .destacados{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+
+
+                .imagen-destacado{
+                    position: relative;
+                    width: 170px;
+                    height: 130px;
+                    margin-right: 39px;
+                    
+                }
+            }
+        }
+
+        .contenedor-galeria-ultima {
+            width: 1227px;
+            height: 500px;
+            background: #FBFCFC;
+            position: relative;
+            margin: auto;
+            margin-top: 60px;
+            justify-content: center;
+            display: flex;
+
+            .galeria{
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                padding-left: 23px;
+
+                li{
+                    width: 280px;
+                    height: 400px;
+                    margin-right: 23px;
+                    padding-left: 14px;
+                    //border: 1px solid #b0b0b0;
+                    box-shadow: 0px 0px 10px rgb(104, 104, 104);
+
+                    &:hover{
+                        box-shadow: 0px 0px 15px rgb(70, 70, 70);
+                        transition: 1.2s ease;
+
+                    }
+
+                    .imagen-galeria{
+                        position: relative;
+                        width: 280px;
+                        height: 189px;
+                        left: -14px;
+    
+                    }
+
+                    .abajo-imagen{
+                        text-decoration: none;
+
+                        .fecha{
+                            padding-left: 0px;
+                            padding-right: 89px;
+                            color: #666666;
+                            font-size: 16px;
+                            font-family: arial;
+                            font-weight: 600;
+                        }
+
+                        .titulo{
+                            color: #5bb6bd;
+                            padding-left: 0px;
+                            padding-right: 158px;
+                        }
+                        
+                        .descripcion{
+                            color: #666666;
+                            font-size: 14.8px;
+                            font-family: roboto;
+                            line-height: 1.6;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        footer{
+            .contenedor-footer{
+                width: 100%;
+                height: 300px;
+                background:#f0f0f0 ;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 60px;
+
+                .footer-part-1{
+                    width: 370px;
+                    height: 195px;
+                    background: #f0f0f0;
+                    margin-top: 55px;
+
+                    .titulo{
+                        color: #2c2c2c;
+                        font-family: "roboto";
+                        font-size: 12px;
+                        padding-bottom: 24px;
+
+                        h1{
+                            font-size: 19px;
+                        }
+                    }
+
+                    .descripcion{
+                        font-size: 0.925rem;
+                        color: #2c2c2c;
+                        font-family: "roboto";
+
+                        .enlace-footer-vermas{
+                            padding-top: 15px;
+
+                            a{
+                                text-decoration: none;
+                                color: #3753d1;
+                            }
+                        }
+                    }
+
+                    .descripcion-3{                        
+                        font-size: 0.925rem;
+                        color: #2c2c2c;
+                        font-family: "roboto";
+                        line-height: 2;
+
+
+                    }
+                }
+            }
+
+            .segundo-contenedor{
+                width: 100%;
+                height: 75px;
+                background: white;
+                display: flex;
+                justify-content: space-between;
+
+                .logo{
+                    width: 400px;
+                    height: 80px;
+                    padding-top: 24px;
+                    font-size: 25px;
+                    padding-left: 40px;
+
+                    h4{
+                        color: gray;
+                    }
+                }
+                .politicas{
+                    width: 400px;
+                    height: 80px;
+                    padding-top: 30px;
+
+                    a{
+                        text-decoration: none;
+                        color: gray;
+                        font-size: 12px;
+                        font-family: arial;
+                        padding-left: 77px;
+                    }
+                }
+                
+                .derechos{
+                    width: 400px;
+                    height: 80px;
+                    padding-top: 35px;
+                    font-family: arial;
+                    font-size: 13px;
+                    padding-left: 75px;
+
+                    p{
+                        color: rgba(0, 0, 0, 0.733);
+                    }
+                }
+            }
+        }
+    }
+}
